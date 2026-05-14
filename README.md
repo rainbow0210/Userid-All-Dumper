@@ -1,30 +1,30 @@
 # Discord_Userid-All-Dumper
 
 # Japanese
-# 概要
+## 概要
 Discord 上で動作する Bot です。サーバー内メンバーのユーザー名と ID を CSV ファイルとして出力します。
 
-# 使用技術
+## 使用技術
 - 言語: Python
 - ライブラリ/フレームワーク: discord.py, python-dotenv
 - データベース: なし
 - その他: Discord Bot, CSV, dotenv
 
-# 使い方
-## 前提条件
+## 使い方
+### 前提条件
 - Python 3.10.10 以上
 - Discord Bot のトークン
 - Discord サーバーでメンバー情報を取得できる権限
 - Bot アプリで Members Intent を有効化していること
 
-## インストール方法
+### インストール方法
 ```bash
 git clone https://github.com/rainbow0210/Userid-All-Dumper.git
 cd Userid-All-Dumper
 pip install discord.py python-dotenv
 ```
 
-## 基本的な使い方
+### 基本的な使い方
 1. プロジェクトルートに `.env` ファイルを作成し、Bot トークンを設定します。
 
 ```env
@@ -49,13 +49,13 @@ Bot を除外して出力したい場合は、次のコマンドを使用しま�
 /user_dump
 ```
 
-# 主な機能
+## 主な機能
 - サーバー内メンバーの名前と ID を CSV に出力します。
 - Bot を除外したユーザー一覧を CSV に出力できます。
 - 生成した CSV はそのまま Discord に添付ファイルとして返します。
 - スラッシュコマンドのみで操作できます。
 
-# 設定
+## 設定
 `.env` に Bot トークンを設定してください。
 
 ```env
@@ -67,7 +67,7 @@ token=YOUR_BOT_TOKEN
 - メンバー一覧の取得には Discord 側で Members Intent の有効化が必要です。
 - 出力ファイルは一時的に CSV を作成し、送信後に削除されます。
 
-# 参考サイト
+## 参考サイト
 
 - discord.py | API Reference: https://discordpy.readthedocs.io/en/stable/api.html
 - Python Get Member from User ID Discord.py: A Comprehensive Guide: https://copyprogramming.com/howto/python-get-member-from-user-id-discord-py-a-comprehensive-guide
@@ -83,7 +83,7 @@ token=YOUR_BOT_TOKEN
 - teratail - 【Python 】.csvファイルの書き込みが上手くいきません: https://teratail.com/questions/300532
 - PythonでCSVファイルの文字コードを変換する方法【初心者向け】: https://magazine.techacademy.jp/magazine/21128
 
-# ライセンス
+## ライセンス
 MIT License
 
 # English
